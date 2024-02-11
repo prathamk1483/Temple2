@@ -1,0 +1,201 @@
+{% extends "Marathi/base.html" %}
+{% block links %}
+{{ block.super }}
+<style>
+     .uniform-image {
+      width: 100%;
+      height: 400px;
+      object-fit: cover;
+      transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effect */
+      border: 1.5px solid #3a3a3a; /* Add border to images */
+      border-radius: 10px; /* Optional: Rounded corners */
+    }
+
+    /* Adjust space around each image container */
+    .genie {
+      padding: 15px; /* Space around the image */
+    }
+
+    /* Hover effect */
+    .genie:hover .uniform-image {
+      transform: scale(1.05); /* Scale up the image slightly */
+      box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3); /* Enhanced shadow for depth */
+    }
+    .image-description p {
+        text-align: center;
+        padding-top: 10px;
+        color: #333; /* Example text color, adjust as needed */
+        font-size: 1em; /* Example font size, adjust as needed */
+        font-weight: bold;
+    }
+    /* Responsive adjustments */
+    @media (max-width: 767px) {
+        .genie {
+            padding: 10px;
+        }
+        .uniform-image {
+            height: 300px; /* Adjust height for smaller screens */
+        }
+    }
+</style>
+{% endblock links %}
+
+{% block body %}
+<div class="background-container">
+    <img src="/static/images/common.png" alt="Background Image" class="background-image">
+</div>
+<h1 style="font-family: 'Poppins',sans-serif;font-weight: bolder;width: 100%; text-align: center;font-size: 3.5em;color: #1f003b;margin-top:150px;margin-bottom: 3rem;">इतर छायाचित्रे</h1>
+<div class="photo-gallery">
+    <div class="container">
+        <div class="row photos">
+            <!-- प्रत्येक प्रतिमेसाठी हा div ब्लॉक पुनरावृत्ती करा -->
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 genie">
+                <a href="/static/images/othergallery/othergallery1.jpeg" data-lightbox="photos">
+                    <img class="img-fluid uniform-image" src="/static/images/othergallery/othergallery1.jpeg" alt="Gallery Image">
+                </a>
+                <div class="image-description">
+                  <p>शेतकरी मार्गदर्शन सत्र-२०२२</p>
+              </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 genie">
+                <a href="/static/images/othergallery/othergallery2.jpeg" data-lightbox="photos">
+                    <img class="img-fluid uniform-image" src="/static/images/othergallery/othergallery2.jpeg" alt="Gallery Image">
+                </a>
+                <div class="image-description">
+                  <p>गणेश जयंती उत्सव - २०२३ आमंत्रण</p>
+              </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 genie">
+                <a href="/static/images/othergallery/othergallery3.jpeg" data-lightbox="photos">
+                    <img class="img-fluid uniform-image" src="/static/images/othergallery/othergallery3.jpeg" alt="Gallery Image">
+                </a>
+                <div class="image-description">
+                  <p>शेतकरी मार्गदर्शन सत्र-२०२२</p>
+              </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 genie">
+                <a href="/static/images/othergallery/othergallery4.jpeg" data-lightbox="photos">
+                    <img class="img-fluid uniform-image" src="/static/images/othergallery/othergallery4.jpeg" alt="Gallery Image">
+                </a>
+                <div class="image-description">
+                  <p>भविष्यातील विकास योजना</p>
+              </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 genie">
+                <a href="/static/images/othergallery/othergallery5.jpeg" data-lightbox="photos">
+                    <img class="img-fluid uniform-image" src="/static/images/othergallery/othergallery5.jpeg" alt="Gallery Image">
+                </a>
+                <div class="image-description">
+                  <p>गणेश जयंती उत्सव - २०२३ आमंत्रणपत्र</p>
+              </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 genie">
+                <a href="/static/images/othergallery/othergallery6.jpeg" data-lightbox="photos">
+                    <img class="img-fluid uniform-image" src="/static/images/othergallery/othergallery6.jpeg" alt="Gallery Image">
+                </a>
+                <div class="image-description">
+                  <p>गणेश विसर्जन कार्यक्रम</p>
+              </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 genie">
+                <a href="/static/images/othergallery/othergallery7.jpeg" data-lightbox="photos">
+                    <img class="img-fluid uniform-image" src="/static/images/othergallery/othergallery7.jpeg" alt="Gallery Image">
+                </a>
+                <div class="image-description">
+                  <p>वैगाव शाळेत पुस्तके आणि स्टेशनरी वितरण</p>
+              </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 genie">
+                <a href="/static/images/othergallery/othergallery8.jpg" data-lightbox="photos">
+                    <img class="img-fluid uniform-image" src="/static/images/othergallery/othergallery8.jpg" alt="Gallery Image">
+                </a>
+                <div class="image-description">
+                    <p>मंदिराच्या जीर्णोद्धार पूजा</p>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 genie">
+                <a href="/static/images/othergallery/othergallery9.png" data-lightbox="photos">
+                    <img class="img-fluid uniform-image" src="/static/images/othergallery/othergallery9.png" alt="Gallery Image">
+                </a>
+                <div class="image-description">
+                    <p>मंदिराच्या जीर्णोद्धार पूजा</p>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 genie">
+                <a href="/static/images/othergallery/othergallery10.png" data-lightbox="photos">
+                    <img class="img-fluid uniform-image" src="/static/images/othergallery/othergallery10.png" alt="Gallery Image">
+                </a>
+                <div class="image-description">
+                    <p>लेटे श्री बाबा महाराज सातारकर कीर्तन कार्यक्रम</p>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 genie">
+                <a href="/static/images/othergallery/othergallery11.png" data-lightbox="photos">
+                    <img class="img-fluid uniform-image" src="/static/images/othergallery/othergallery11.png" alt="Gallery Image">
+                </a>
+                <div class="image-description">
+                    <p>मंदिर ट्रस्टी सह लेटे श्री. बाबा महाराज सातारकर</p>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 genie">
+                <a href="/static/images/othergallery/othergallery12.png" data-lightbox="photos">
+                    <img class="img-fluid uniform-image" src="/static/images/othergallery/othergallery12.png" alt="Gallery Image">
+                </a>
+                <div class="image-description">
+                    <p>महाराष्ट्र राज्याचे पूर्व गार्डियन मंत्री आणि मंत्री, मा. प्रविण पोटे मंदिराला भेट दिली</p>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 genie">
+                <a href="/static/images/othergallery/othergallery13.png" data-lightbox="photos">
+                    <img class="img-fluid uniform-image" src="/static/images/othergallery/othergallery13.png" alt="Gallery Image">
+                </a>
+                <div class="image-description">
+                    <p>महाराष्ट्र राज्याचे पूर्व गार्डियन मंत्री आणि मंत्री, मा. वसुदताई देशमुख मंदिराला भेट दिली</p>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 genie">
+                <a href="/static/images/othergallery/othergallery14.png" data-lightbox="photos">
+                    <img class="img-fluid uniform-image" src="/static/images/othergallery/othergallery14.png" alt="Gallery Image">
+                </a>
+                <div class="image-description">
+                    <p>गणेश उत्सव</p>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 genie">
+                <a href="/static/images/othergallery/othergallery15.png" data-lightbox="photos">
+                    <img class="img-fluid uniform-image" src="/static/images/othergallery/othergallery15.png" alt="Gallery Image">
+                </a>
+                <div class="image-description">
+                    <p>गणेश जयंती चे महाप्रसाद</p>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 genie">
+                <a href="/static/images/othergallery/othergallery16.png" data-lightbox="photos">
+                    <img class="img-fluid uniform-image" src="/static/images/othergallery/othergallery16.png" alt="Gallery Image">
+                </a>
+                <div class="image-description">
+                    <p>मंदिर ट्रस्ट द्वारे वृक्षारोपण ड्राय्व्ह (महाराष्ट्र सरकारच्या ४४ कोटी वृक्षारोपण)</p>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 genie">
+                <a href="/static/images/othergallery/othergallery17.png" data-lightbox="photos">
+                    <img class="img-fluid uniform-image" src="/static/images/othergallery/othergallery17.png" alt="Gallery Image">
+                </a>
+                <div class="image-description">
+                    <p>गणेश जयंती उत्सव - २०२४ निमंत्रण पत्रिका</p>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 genie">
+                <a href="/static/images/othergallery/othergallery18.png" data-lightbox="photos">
+                    <img class="img-fluid uniform-image" src="/static/images/othergallery/othergallery18.png" alt="Gallery Image">
+                </a>
+                <div class="image-description">
+                    <p>किसान मार्गदर्शन सत्र - २०२४ मंदिर ट्रस्ट द्वारे आयोजित</p>
+                </div>
+            </div>
+            <!-- ... इतर प्रतिमा div ब्लॉक्स ... -->
+        </div>
+  
+</div>
+</div>
+{% endblock body %}

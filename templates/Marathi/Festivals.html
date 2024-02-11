@@ -1,0 +1,102 @@
+{% extends "Marathi/base.html" %}
+{% block links %}
+<!-- <link rel="stylesheet" href="/static/css/navbar.css"> -->
+<link rel="stylesheet" href="/static/css/footer.css">
+{% endblock links %}
+{% block style %}
+{{ block.super }}
+<style>
+    body {
+        /* font-family: 'Poppins', sans-serif; */
+        background-color: rgb(255 157 67 / 40%);
+        margin: 0;
+        padding: 0;
+    }
+
+    .container {
+        padding: 20px;
+        box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+        margin-bottom: 100px;
+    }
+
+    h1 {
+        text-align: center;
+        color: #333;
+    }
+
+    th {
+        background-color: #FF2525;
+        color: white;
+    }
+
+    .container mt-5 {
+        margin-bottom: 50px;
+    }
+
+    .table img {
+        width:120px;
+        height: auto;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Add the following styles for table borders */
+    .table {
+        border-collapse: collapse;
+    }
+
+    .table th, .table td {
+        border: 1px solid black;
+    }
+    </style>
+{% endblock style %}
+{% block body %}
+
+<div class="background-container" style="margin-top: -70px;">
+    <img src="/static/images/common.png" alt="Background Image" class="background-image">
+    <div class="overlay" style="background-color: rgba(255, 255, 255, 0.5);"></div>
+</div>
+<h1 style="font-weight: bolder; margin-top: 40px;" >सणांचे कॅलेंडर</h1>
+<div class="container mt-5" style="background-color: rgb(255, 255, 255);">
+    <h2 style="font-weight: 510;">२०२४ मध्ये गणेशाच्या आशीर्वादाचा सण साजरा करा!</h2>
+    <p class="lead mb-4">भगवान गणेशाचा सन्मान करणाऱ्या या शुभ सणांसाठी आपले कॅलेंडर चिन्हांकित करा.</p>
+    <div class="table-responsive">
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th style="background-color: #FF2525;">सण</th>
+                    <th style="background-color: #FF2525;">दिनांक</th>
+                   
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>अंगारकी चतुर्थी</td>
+                    <td>९ जानेवारी, ६ फेब्रुवारी, ५ मार्च, २ एप्रिल, ३१ मे, ३० जुलै, २७ ऑगस्ट, २४ सप्टेंबर, २२ ऑक्टोबर, २० नोव्हेंबर, १७ डिसेंबर</td>
+                    
+                </tr>
+                <tr>
+                    <td>संकष्टी चतुर्थी</td>
+                    <td>१२ जानेवारी, १० फेब्रुवारी, ९ मार्च, ७ एप्रिल, ७ मे, ४ जून, ४ जुलै, १ ऑगस्ट, २९ ऑगस्ट, २७ सप्टेंबर, २५ ऑक्टोबर, २३ नोव्हेंबर, २१ डिसेंबर</td>
+                    
+                </tr>
+                <tr>
+                    <td>विनायक चतुर्थी</td>
+                    <td>३० ऑगस्ट</td>
+                    
+                </tr>
+                <tr>
+                    <td>गणेश जयंती</td>
+                    <td>१८ सप्टेंबर</td>
+                    
+                </tr>
+                <tr>
+                    <td>गणेश उत्सव</td>
+                    <td>२० सप्टेंबर (सुरू) - ३० सप्टेंबर (समाप्त)</td>
+                    
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+{% endblock body %}

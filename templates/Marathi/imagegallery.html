@@ -1,0 +1,85 @@
+{% extends "Marathi/base.html" %}
+{% block links %}
+{{ block.super }}
+<style>
+    .uniform-image {
+      width: 100%;
+      height: 400px;
+      object-fit: cover;
+      transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effect */
+      border: 1.5px solid #3a3a3a; /* Add border to images */
+      border-radius: 10px; /* Optional: Rounded corners */
+    }
+
+    /* Adjust space around each image container */
+    .genie {
+      padding: 15px; /* Space around the image */
+    }
+
+    /* Hover effect */
+    .genie:hover .uniform-image {
+      transform: scale(1.05); /* Scale up the image slightly */
+      box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3); /* Enhanced shadow for depth */
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 767px) {
+        .genie {
+            padding: 10px;
+        }
+        .uniform-image {
+            height: 300px; /* Adjust height for smaller screens */
+        }
+    }
+</style>
+{% endblock links %}
+
+{% block body %}
+<div class="background-container">
+    <img src="/static/images/common.png" alt="Background Image" class="background-image">
+</div>
+<h1 style="font-family: 'Poppins',sans-serif;font-weight: bolder;width: 100%; text-align: center;font-size: 3.5em;color: #1f003b;margin-top:150px;margin-bottom: 3rem;">फोटो गॅलरी</h1>
+<div class="photo-gallery">
+  <div class="container">
+      <div class="row photos">
+          <!-- Repeat this div block for each image -->
+          <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 genie">
+              <a href="/static/images/imagegallery/imagegallery1.jpeg" data-lightbox="photos">
+                  <img class="img-fluid uniform-image" src="/static/images/imagegallery/imagegallery1.jpeg" alt="Gallery Image">
+              </a>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 genie">
+              <a href="/static/images/imagegallery/imagegallery2.jpeg" data-lightbox="photos">
+                  <img class="img-fluid uniform-image" src="/static/images/imagegallery/imagegallery2.jpeg" alt="Gallery Image">
+              </a>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 genie">
+              <a href="/static/images/imagegallery/imagegallery3.jpeg" data-lightbox="photos">
+                  <img class="img-fluid uniform-image" src="/static/images/imagegallery/imagegallery3.jpeg" alt="Gallery Image">
+              </a>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 genie">
+              <a href="/static/images/imagegallery/imagegallery4.jpeg" data-lightbox="photos">
+                  <img class="img-fluid uniform-image" src="/static/images/imagegallery/imagegallery4.jpeg" alt="Gallery Image">
+              </a>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 genie">
+              <a href="/static/images/imagegallery/imagegallery5.jpeg" data-lightbox="photos">
+                  <img class="img-fluid uniform-image" src="/static/images/imagegallery/imagegallery5.jpeg" alt="Gallery Image">
+              </a>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 genie">
+              <a href="/static/images/imagegallery/imagegallery6.jpeg" data-lightbox="photos">
+                  <img class="img-fluid uniform-image" src="/static/images/imagegallery/imagegallery6.jpeg" alt="Gallery Image">
+              </a>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 genie">
+              <a href="/static/images/imagegallery/imagegallery7.jpeg" data-lightbox="photos">
+                  <img class="img-fluid uniform-image" src="/static/images/imagegallery/imagegallery7.jpeg" alt="Gallery Image">
+              </a>
+          </div>
+         
+      </div>
+  </div>
+</div>
+{% endblock body %}
